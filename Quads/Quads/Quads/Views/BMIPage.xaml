@@ -4,12 +4,28 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Quads.Views.BMIPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="Quads.Views.BMIPage"
+             Visual="Material"
+             BackgroundColor="White">
+    
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+        <Frame BackgroundColor="White" CornerRadius="10">
+            <StackLayout>
+                <Label Text="WEIGHT"/>
+                <Entry x:Name="EntWeight" Keyboard="Numeric" MaxLength="3" Placeholder="weight in kg"/>
+                <Label Text="HEIGHT"/>
+                <Entry x:Name="EntHeight" Keyboard="Numeric" MaxLength="4" Placeholder="height in m"/>
+                <Button x:Name="BtnCalculate" Text="CALCULATE" Style="{StaticResource button}" Clicked="BtnCalculate_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="White" CornerRadius="10">
+            <StackLayout>
+                <Label Text="YOUR RESULT"/>
+                <Label x:Name="LabBMI"></Label>
+                <Label x:Name="LabResult"></Label>
+                <Label x:Name="LabInfo"></Label>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+    
 </ContentPage>

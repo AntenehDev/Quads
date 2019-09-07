@@ -4,12 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Quads.Views.QRPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="Quads.Views.QRPage"
+             Visual="Material"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+        <Frame BackgroundColor="White" CornerRadius="10">
+            <StackLayout>
+                <Label Text="SCAN YOUR GYM CARD"/>
+                <Button x:Name="BtnScan" Text="SCAN" Style="{StaticResource button}" Clicked="BtnScan_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="White" CornerRadius="10">
+            <StackLayout>
+                <Label Text="QRCode" x:Name="QRCodetxt" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
 </ContentPage>

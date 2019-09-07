@@ -4,12 +4,56 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Quads.Views.SchedulePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="Quads.Views.SchedulePage"
+             Visual="Material"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <Label HorizontalOptions="StartAndExpand" Text="This Week"/>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="MONDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="TUESDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="WEDNESDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="THURSDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="FRIDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="SATURDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="SUNDAY"/>
+                    <Label Text="placeholder"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
+
 </ContentPage>
