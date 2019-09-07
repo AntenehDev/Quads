@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace Quads
 {
     public partial class App : Application
@@ -10,7 +11,7 @@ namespace Quads
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage (new LoginPage());
         }
 
         protected override void OnStart()

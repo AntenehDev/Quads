@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Quads.Views.SignupPage"
+             Visual="Material"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+        <Label Text="Sign Up" FontSize="Header" Style="{StaticResource label}"/>
+        <Frame BackgroundColor="White" CornerRadius="10">
+            <StackLayout>
+                <Label Text="NAME"/>
+                <Entry x:Name="EntName" Keyboard="Text" Placeholder="name"/>
+                <Label Text="USERNAME"/>
+                <Entry x:Name="EntUserName" Keyboard="Email" Placeholder="username"/>
+                <Label Text="EMAIL"/>
+                <Entry x:Name="EntEmail" Keyboard="Email" Placeholder="email"/>
+                <Label Text="PASSWORD"/>
+                <Entry x:Name="EntPassword" Keyboard="Text" Placeholder="password" IsPassword="True"/>
+                <Button x:Name="BtnSignUp" Text="SIGN UP" Style="{StaticResource button}" Clicked="BtnSignUp_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
